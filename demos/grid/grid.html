@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="components.css">
+    <style>
+        [class*=col] {
+            border: 1px solid #888;
+            background: #eee;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .row {
+            padding: 5px;
+            border: 1px solid red;
+        }
+
+        [class*=col]::after {
+            content: attr(class);
+
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-2 col-offset-4"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-4 col-offset-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 col-offset-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-8"></div>
+            <div class="col-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3 col-right"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4 col-offset-1"></div>
+            <div class="col-1 col-right"></div>
+            <div class="col-4 col-right col-offset-1"></div>
+        </div>
+    </div>
+</body>
+
+</html>

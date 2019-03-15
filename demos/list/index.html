@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List</title>
+    <link rel="stylesheet" href="../../node_modules/_obptcss@1.0.15@obptcss/dist/main.css">
+    <style>
+        .list {
+            border: 1px solid #369;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+    <style>
+        .list-news {
+            font-size: 14px;
+        }
+
+        .list-news li {
+            height: 27px;
+            line-height: 27px;
+        }
+
+        .list-news a {
+            color: #222;
+        }
+
+        .list-news a:hover {
+            color: #369;
+        }
+
+        .list-news a:visited {
+            color: #222;
+        }
+
+        .list-news>header {
+            padding-left: 5px;
+            padding-right: 5px;
+            border-left: 2px solid #254282;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #254282;
+            background: #fff;
+        }
+    </style>
+    <style>
+        .list-news2>header {
+            padding-left: 5px;
+            padding-right: 5px;
+            border-left: 2px solid #254282;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #254282;
+            background: #fff;
+        }
+
+        .list-news2 img {
+            width: 187px;
+            height: 125px;
+        }
+
+        .list-news2>ul>li {
+            float: left;
+            margin: 0 12px 12px 0;
+
+        }
+
+        .list-news2 li a {
+            display: block;
+            text-decoration: none;
+            color: #222;
+        }
+
+        .list-news2 li a:last-child {
+            padding: 6px 5px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 12px;
+            text-align: center;
+            word-wrap: break-word;
+            word-break: break-all;
+            background: #f6f7f8;
+        }
+
+        .list-news2 li a:last-child:hover {
+            background-color: #3064bb;
+            color: #fff;
+        }
+    </style>
+    <style>
+        .list-blogs>ul>li {
+            border-bottom: 1px dotted #ccc;
+            border-width: 1px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+        }
+
+        .digg {
+            float: left;
+            width: 60px;
+        }
+
+        .diggit {
+            float: left;
+            width: 46px;
+            height: 52px;
+            background: #fcf7dc;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 2px;
+            text-indent: 0;
+        }
+
+        .digg_tip {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        .post_item_body {
+            margin-left: 50px;
+            padding-top: 1px;
+            line-height: 150%
+        }
+
+        .post_item_summary {
+            line-height: 1.8em;
+            margin-bottom: 5px;
+            color: #333;
+            overflow: hidden;
+            padding-right: 5px;
+            font-size: 12px;
+            padding-top: 5px
+        }
+
+        .post_item_foot {
+            color: #555;
+            padding-top: 5px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="list list-news">
+        <header>
+            <h3>新闻资讯</h3>
+        </header>
+        <ul>
+            <li><a href="http://www.sanqin.com/2019/0227/408794.shtml" target="_blank">环城西苑现西安首个跑酷广场 专业玩家质疑...</a></li>
+            <li><a href="http://www.huaxia.com/zjsx/xwsc/2019/02/6037331.html" target="_blank">发力“重特大”项目 为高质量发展蓄能</a></li>
+            <li><a href="http://www.sanqin.com/2019/0227/408836.shtml" target="_blank">碑林区长乐坊街道深入宣传扫黑除恶</a></li>
+            <li><a href="http://sn.people.com.cn/n2/2019/0227/c378288-32685395.html" target="_blank">西安市民收到朋友寄来特产
+                    发现数量减半怀疑被二...</a></li>
+            <li><a href="http://news.hsw.cn/system/2019/0227/1066077.shtml" target="_blank">新婚夫妇将包落在西安地铁二号线 内含结婚证和6...</a></li>
+            <li><a href="http://news.hsw.cn/system/2019/0227/1066073.shtml" target="_blank">春节后西安早餐价格普遍上涨 街头早餐多掏3毛到...</a></li>
+            <li><a href="http://finance.eastmoney.com/news/1345,201902271055227040.html" target="_blank">东方金钰：终止向中国蓝田转让控制权事项</a></li>
+        </ul>
+
+    </section>
+    <section class="list list-news2">
+        <header>
+            <h3>图文列表</h3>
+        </header>
+        <ul class="clear">
+            <li>
+                <a href="https://3w.huanqiu.com/a/bdb047/7KCiUaY7dao?agt=8" title="郭帆：跟卡梅隆比差100年" target="_blank">
+                    <img src="http://hiphotos.baidu.com/news/crop%3D70%2C0%2C530%2C356%3Bq%3D80%3B/sign=036bc2740c087bf469a30da9cfe46700/a50f4bfbfbedab641db1b0fff936afc378311ec9.jpg">
+                </a>
+                <a href="https://3w.huanqiu.com/a/bdb047/7KCiUaY7dao?agt=8" class="txt" target="_blank">郭帆：跟卡梅隆比差100年
+                </a>
+            </li>
+            <li>
+                <a href="https://3w.huanqiu.com/a/bdb047/7KCiIBXHGrm?agt=8" title="女团粉丝跪着签售引热议" target="_blank">
+                    <img src="http://hiphotos.baidu.com/news/crop%3D33%2C37%2C370%2C248%3Bq%3D80%3B/sign=9d415880aeec08fa324f49e764dd0e41/9922720e0cf3d7ca1189c349fc1fbe096b63a996.jpg">
+                </a>
+                <a href="https://3w.huanqiu.com/a/bdb047/7KCiIBXHGrm?agt=8" class="txt" target="_blank">女团粉丝跪着签售引热议</a>
+            </li>
+            <li>
+                <a href="https://3w.huanqiu.com/a/bdb047/7KCiXZiQyVa?agt=8" title="林俊杰晒与贾老板合照" target="_blank">
+                    <img src="http://hiphotos.baidu.com/news/crop%3D0%2C0%2C630%2C423%3Bq%3D80%3B/sign=0d35ff75d4b44aed4d01e4a48e2cab31/342ac65c1038534370df7b1e9d13b07eca8088f9.jpg">
+                </a>
+                <a href="https://3w.huanqiu.com/a/bdb047/7KCiXZiQyVa?agt=8" class="txt" target="_blank">林俊杰晒与贾老板合照</a>
+            </li>
+            <li>
+                <a href="http://fun.youth.cn/gnzx/201902/t20190227_11881033.htm" title="付辛博颖儿一家三口现身机场" target="_blank">
+                    <img src="http://hiphotos.baidu.com/news/crop%3D0%2C0%2C950%2C638%3Bq%3D80%3B/sign=a3df3ad1ba8f8c54f79c9f6f071901c5/962bd40735fae6cd7707575e01b30f2442a70f59.jpg">
+                </a>
+                <a href="http://fun.youth.cn/gnzx/201902/t20190227_11881033.htm" class="txt" target="_blank">付辛博颖儿一家三口现身机场</a>
+            </li>
+            <li>
+                <a href="http://fun.youth.cn/gnzx/201902/t20190227_11881026.htm" title="被网友指洗白出轨 包贝尔怒斥" target="_blank">
+                    <img src="http://hiphotos.baidu.com/news/crop%3D0%2C272%2C630%2C423%3Bq%3D80%3B/sign=9201ffde212eb938f82220b2e852a907/bd315c6034a85edf4b57021c47540923dd547532.jpg">
+                </a>
+                <a href="http://fun.youth.cn/gnzx/201902/t20190227_11881026.htm" class="txt" target="_blank">被网友指洗白出轨
+                    包贝尔怒斥</a>
+            </li>
+        </ul>
+
+    </section>
+    <section class="list list-blogs">
+        <ul>
+
+            <li>
+                <div class="digg">
+                    <div class="diggit" onclick="DiggPost('cnblogsfans',10446983,30341,1)">
+                        <span class="diggnum" id="digg_count_10446983">1</span>
+                    </div>
+
+                    <div id="digg_tip_10446983" class="digg_tip"></div>
+                </div>
+                <div class="post_item_body">
+                    <h3><a class="titlelnk" href="https://www.cnblogs.com/cnblogsfans/p/programmer_self_cultivation.html"
+                            target="_blank">程序员的自我修养系列（一）：聊聊专业和业余</a></h3>
+                    <p class="post_item_summary">
+                        <a href="https://www.cnblogs.com/cnblogsfans/" target="_blank"><img width="48" height="48"
+                                class="pfs" src="//pic.cnblogs.com/face/26781/20190227212422.png" alt=""></a>
+                        毕业工作很多年，如果让我说一个感受很深的体会的就是 专业
+                        和 业余 的区别，我想很多人都能理解这两个词的字面意思，但是要想有深刻的感受，却是不易。
+                        就比如我们看很多体育比赛，觉得人家没啥，就拿大家经常骂的国足来说，很多人老觉得自己踢球也还可以，还不如自己上去踢，那是因为这些人没亲眼见过人家的系统训... ...
+                    </p>
+                    <div class="post_item_foot">
+                        <a href="https://www.cnblogs.com/cnblogsfans/" class="lightblue">敏捷的水</a>
+                        发布于 2019-02-27 21:21
+                        <span class="article_comment"><a href="https://www.cnblogs.com/cnblogsfans/p/programmer_self_cultivation.html#commentform"
+                                title="" class="gray">
+                                评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/cnblogsfans/p/programmer_self_cultivation.html"
+                                class="gray">阅读(81)</a></span></div>
+                </div>
+
+            </li>
+            <li>
+                <div class="digg">
+                    <div class="diggit" onclick="DiggPost('youyoui',10446784,247580,1)">
+                        <span class="diggnum" id="digg_count_10446784">0</span>
+                    </div>
+
+                    <div id="digg_tip_10446784" class="digg_tip"></div>
+                </div>
+                <div class="post_item_body">
+                    <h3><a class="titlelnk" href="https://www.cnblogs.com/youyoui/p/10446784.html" target="_blank">PHPStorm中对nodejs项目进行单元测试</a></h3>
+                    <p class="post_item_summary">
+                        <a href="https://www.cnblogs.com/youyoui/" target="_blank"><img width="48" height="48" class="pfs"
+                                src="//pic.cnblogs.com/face/818185/20180312134850.png" alt=""></a> 安装必要的包
+                        nodejs的单元测试最常用的是使用 包。首先确保你本地安装 ，之后按照 包。 然后还需要安装相关的断言工具，Node.js中常用的断言库有：
+                        assert: TDD风格 should: BDD风格 expect: BDD风格 chai: BDD/TDD风格 使用 安装这些断言库其中之 ...
+                    </p>
+                    <div class="post_item_foot">
+                        <a href="https://www.cnblogs.com/youyoui/" class="lightblue">悠悠i</a>
+                        发布于 2019-02-27 20:47
+                        <span class="article_comment"><a href="https://www.cnblogs.com/youyoui/p/10446784.html#commentform"
+                                title="" class="gray">
+                                评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/youyoui/p/10446784.html"
+                                class="gray">阅读(26)</a></span></div>
+                </div>
+
+            </li>
+            <li>
+                <div class="digg">
+                    <div class="diggit" onclick="DiggPost('cuiyuanzhang',10446737,447418,1)">
+                        <span class="diggnum" id="digg_count_10446737">0</span>
+                    </div>
+
+                    <div id="digg_tip_10446737" class="digg_tip"></div>
+                </div>
+                <div class="post_item_body">
+                    <h3><a class="titlelnk" href="https://www.cnblogs.com/cuiyuanzhang/p/10446737.html" target="_blank">算法与数据结构之查找和排序</a></h3>
+                    <p class="post_item_summary">
+                        <a href="https://www.cnblogs.com/cuiyuanzhang/" target="_blank"><img width="48" height="48"
+                                class="pfs" src="//pic.cnblogs.com/face/1236329/20181018164030.png" alt=""></a> 必备知识点
+                        时间复杂度
+                        时间复杂度是用来估算算法运行速度的一种方式，通常采用大O表示法。 需要注意以下几点： 时间复杂度指的不是算法运行的时间，而是算法运行的增速。 时间复杂度是估算，一些非必要的会省略。
+                        通产表示为O(n)，其中n为操作数。 快速判断时间复杂度的方法： 如果发现循环数减半，那么复杂 ...
+                    </p>
+                    <div class="post_item_foot">
+                        <a href="https://www.cnblogs.com/cuiyuanzhang/" class="lightblue">崔园樟</a>
+                        发布于 2019-02-27 20:43
+                        <span class="article_comment"><a href="https://www.cnblogs.com/cuiyuanzhang/p/10446737.html#commentform"
+                                title="" class="gray">
+                                评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/cuiyuanzhang/p/10446737.html"
+                                class="gray">阅读(40)</a></span></div>
+                </div>
+
+            </li>
+            <li>
+                <div class="digg">
+                    <div class="diggit" onclick="DiggPost('mindwind',10446668,246484,1)">
+                        <span class="diggnum" id="digg_count_10446668">0</span>
+                    </div>
+
+                    <div id="digg_tip_10446668" class="digg_tip"></div>
+                </div>
+                <div class="post_item_body">
+                    <h3><a class="titlelnk" href="https://www.cnblogs.com/mindwind/p/10446668.html" target="_blank">你有犯错的权利</a></h3>
+                    <p class="post_item_summary">
+                        <a href="https://www.cnblogs.com/mindwind/" target="_blank"><img width="48" height="48" class="pfs"
+                                src="//pic.cnblogs.com/face/815275/20150923163544.png" alt=""></a>
+                        引言：读到一篇很有启发的文章，关于做事与犯错的心态，或多或少都曾为此被束缚过，读完有种醍醐般的恍然，简单翻译了一下，分享一下。 “你有犯错的权利”
+                        是我高中一位历史老师的常用表达。有些学生讨厌这位老师，因为他们认为他很懒，而且有点爱虐人。他从来不讲课，而且似乎也没有备课。他总是坐在椅子上，有时还会把 ...
+                    </p>
+                    <div class="post_item_foot">
+                        <a href="https://www.cnblogs.com/mindwind/" class="lightblue">mindwind</a>
+                        发布于 2019-02-27 20:37
+                        <span class="article_comment"><a href="https://www.cnblogs.com/mindwind/p/10446668.html#commentform"
+                                title="" class="gray">
+                                评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/mindwind/p/10446668.html"
+                                class="gray">阅读(39)</a></span></div>
+                </div>
+
+            </li>
+            <li>
+                <div class="digg">
+                    <div class="diggit" onclick="DiggPost('zhaof',10446623,295827,1)">
+                        <span class="diggnum" id="digg_count_10446623">0</span>
+                    </div>
+
+                    <div id="digg_tip_10446623" class="digg_tip"></div>
+                </div>
+                <div class="post_item_body">
+                    <h3><a class="titlelnk" href="https://www.cnblogs.com/zhaof/p/10446623.html" target="_blank">关于asyncio知识（一）</a></h3>
+                    <p class="post_item_summary">
+                        <a href="https://www.cnblogs.com/zhaof/" target="_blank"><img width="48" height="48" class="pfs"
+                                src="//pic.cnblogs.com/face/997599/20170608150835.png" alt=""></a> 一、介绍 asyncio
+                        是python3.4 引入的一个新的并发模块，主要通过使用coroutines 和 futures
+                        来让我们更容易的去实现异步的功能，并且几乎和写同步代码一样的写代码，还没有烦人的回调。 在2018年6月 3.7的更新中针对asyncio的api进行了一些升级，主要是关于t ...
+                    </p>
+                    <div class="post_item_foot">
+                        <a href="https://www.cnblogs.com/zhaof/" class="lightblue">python修行路</a>
+                        发布于 2019-02-27 20:32
+                        <span class="article_comment"><a href="https://www.cnblogs.com/zhaof/p/10446623.html#commentform"
+                                title="" class="gray">
+                                评论(0)</a></span><span class="article_view"><a href="https://www.cnblogs.com/zhaof/p/10446623.html"
+                                class="gray">阅读(31)</a></span></div>
+                </div>
+
+            </li>
+            <li>
+                <div class="digg">
+                    <div class="diggit" onclick="DiggPost('smark',10446152,98880,1)">
+                        <span class="diggnum" id="digg_count_10446152">0</span>
+                    </div>
+
+                    <div id="digg_tip_10446152" class="digg_tip"></div>
+                </div>
+                <div class="post_item_body">
+                    <h3><a class="titlelnk" href="https://www.cnblogs.com/smark/p/10446152.html" target="_blank">BeetleX之WebSocket详解</a></h3>
+                    <p class="post_item_summary">
+                        <a href="https://www.cnblogs.com/smark/" target="_blank"><img width="48" height="48" class="pfs"
+                                src="//pic.cnblogs.com/face/u254151.png?id=10173521" alt=""></a>
+                        对于BeetleX来说编写WebSocket服务是一件非常简单的事情，当你实现一个Web
+                        Api应用的同时这些API方法也是WebSocket服务方法。接下来主要讲解如何通过JavaScript调用BeetleX的WebSocket服务方法或定义一个适合自己数据格式的WebSocket服务。
+                        引用组 ...
+                    </p>
+                    <div class="post_item_foot">
+                        <a href="https://www.cnblogs.com/smark/" class="lightblue">smark</a>
+                        发布于 2019-02-27 19:38
+                        <span class="article_comment"><a href="https://www.cnblogs.com/smark/p/10446152.html#commentform"
+                                title="2019-02-27 21:46" class="gray">
+                                评论(1)</a></span><span class="article_view"><a href="https://www.cnblogs.com/smark/p/10446152.html"
+                                class="gray">阅读(62)</a></span></div>
+                </div>
+
+            </li>
+
+
+
+        </ul>
+    </section>
+
+</body>
+
+</html>
