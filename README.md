@@ -4,7 +4,7 @@
 
 ### Grid(栅格)
 
-- [grid.html](/demos/grid/grid.html)
+- [grid.html](./demos/grid/grid.html)
 
 
 
