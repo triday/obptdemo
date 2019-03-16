@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build":"npm run copy-obptcss",
+    "copy-obptcss":"xcopy node_modules\\obptcss\\css css /y",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
