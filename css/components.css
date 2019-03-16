@@ -1,31 +1,24 @@
-.reset-list,
-.list > ul,
-.list > ol,
-.list > ul > li,
-.list > ol > li,
-.tab > header > ul,
-.tab > .header > ul,
-.tab > header > ol,
-.tab > .header > ol,
-.tab > header > ul > li,
-.tab > .header > ul > li,
-.tab > header > ol > li,
-.tab > .header > ol > li,
-.tab > main > ul,
-.tab > .main > ul,
-.tab > main > ol,
-.tab > .main > ol,
-.tab > main > ul > li,
-.tab > .main > ul > li,
-.tab > main > ol > li,
-.tab > .main > ol > li,
-.carousel > ul,
-.carousel > ol,
-.carousel > ul > li,
-.carousel > ol > li {
+.clear::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.single-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+ul,
+ol,
+li {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+.list::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 .list-inline-block > ul > li,
 .list-inline-block > ol > li {
@@ -70,6 +63,11 @@
 .carousel {
   position: relative;
   overflow: hidden;
+}
+.carousel::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 .carousel > ul:first-child {
   position: relative;
@@ -119,9 +117,6 @@
   right: 0;
 }
 .grid {
-  box-sizing: border-box;
-}
-.grid * {
   box-sizing: border-box;
 }
 .row {
@@ -261,4 +256,20 @@
 .row > .col-offset-12.col-right {
   margin-left: 0;
   margin-right: calc(100% / 12 * 12);
+}
+.flow::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.flow > * {
+  float: left;
+}
+.flow-right::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.flow-right > * {
+  float: right;
 }

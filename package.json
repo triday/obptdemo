@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"npm run copy-obptcss",
-    "copy-obptcss":"xcopy node_modules\\obptcss\\css css /y",
+    "build": "npm run copy-obptcss",
+    "update": "npm update obptcss && npm run build",
+    "copy-obptcss": "xcopy node_modules\\obptcss\\css css /y",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "obptcss": "^1.0.16"
+    "obptcss": "^1.0.20"
   }
 }

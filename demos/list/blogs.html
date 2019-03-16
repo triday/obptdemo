@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>博客列表</title>
+    <link rel="stylesheet" href="../../css/components.css">
+    <style>
+        .list-csdn-blogs {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .list-csdn-blogs a {
+            text-decoration: none;
+        }
+
+        .list-csdn-blogs li {
+            padding: 18px 24px;
+            background: #fff;
+            border-bottom: 1px solid #f4f4f4;
+            position: relative;
+            -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+        }
+
+        .list-csdn-blogs header h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 24px;
+            height: 24px;
+            margin-bottom: 4px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .list-csdn-blogs header .icon-close {
+            position: absolute;
+            right: 24px;
+            top: 18px;
+            font-style: normal;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            opacity: .3;
+        }
+
+        .list-csdn-blogs header .icon-close:hover {
+            opacity: .8;
+        }
+
+        .list-csdn-blogs header a {
+            color: #000;
+        }
+
+        .list-csdn-blogs header a:hover {
+            color: #ca0c16;
+        }
+
+        .list-csdn-blogs li:hover {
+            background: #fafafa;
+        }
+
+        .list-csdn-blogs footer {
+            font-size: 14px;
+
+        }
+
+        .list-csdn-blogs .summary {
+            margin-bottom: 4px;
+            color: #8a8a8a;
+            line-height: 24px;
+        }
+
+        .list-csdn-blogs .author {
+            line-height: 24px;
+            color: #3d3d3d;
+
+        }
+
+        .list-csdn-blogs a:hover {
+            color: #157dcf;
+            cursor: pointer;
+        }
+
+        .list-csdn-blogs .author img {
+
+            display: inline-block;
+            vertical-align: middle;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+
+
+        .list-csdn-blogs .split::after {
+            content: '';
+            height: 12px;
+            margin: 0 5px;
+            display: inline-block;
+            border-left: 1px solid #e0e0e0;
+            cursor: default;
+        }
+
+        .list-csdn-blogs .category,
+        .list-csdn-blogs .time {
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="list list-csdn-blogs">
+        <ul>
+            <li>
+                <header>
+                    <h2>
+                        <a href="https://blog.csdn.net/CSDNedu/article/details/88533269" target="_blank">
+                            Java 跌落神坛！Python 正式登顶世界第一编程语言 </a>
+
+                    </h2>
+                    <i class="icon-close">X</i>
+                </header>
+                <p class="summary single-line">
+                </p>
+                <footer>
+                    <a class="author split" href="https://blog.csdn.net/CSDNedu?utm_source=feed" target="_blank">
+                        <img src="https://profile.csdnimg.cn/4/E/4/1_csdnedu" alt="CSDNedu" title="CSDNedu">
+                        CSDNedu </a>
+                    <span class="time">1天前</span>
+                </footer>
+            </li>
+            <li>
+                <header>
+                    <h2>
+                        <a href="https://blog.csdn.net/weixin_39780047/article/details/88569892" target="_blank">
+                            程序员和产品打架，被罚拉手一下午！ </a>
+
+                    </h2>
+                    <i class="icon-close">X</i>
+                </header>
+                <p class="summary single-line">
+                    是个程序员都知道，和产品经理撕x是最伤神的，所以产品经理在很多技术的眼里都等同于“事儿x”，毕竟现在别说懂技术的产品了，连懂技术边界的产品都打着灯笼找不着，能不撕吗？
+                    人人都是产品经理，把程序员脑子都闹崩了！
+
+                    但是撕归撕，如果领导处理不好这两者的关系，那要么产品遁地，要么技术跑路，团队就别干了，光顾着吵架出不来活。
+                    而最近某公司有个非常“皮”的领导，因为程序员和产品打架（俩男的），所以决定要么都...
+                </p>
+                <footer>
+                    <a class="author split" href="https://blog.csdn.net/weixin_39780047?utm_source=feed" target="_blank">
+                        <img src="https://profile.csdnimg.cn/4/E/4/1_csdnedu" alt="CSDNedu" title="CSDNedu">
+                        weixin_39780047 </a>
+                    </a>
+                    <a class="category split" target="_blank" href="https://www.csdn.net/nav/career">程序人生</a>
+                    <span class="time">1天前</span>
+                </footer>
+            </li>
+            <li>
+                <header>
+                    <h2>
+                        <a href="https://blog.csdn.net/csdnnews/article/details/88564393" target="_blank"
+                            data-track-click="{&quot;mod&quot;:&quot;popu_459&quot;,&quot;con&quot;:&quot;,https://blog.csdn.net/csdnnews/article/details/88564393,recommend,index_2&quot;}">
+                            陆奇技术入局拼多多，拼多多能否摆脱“五环外”？ </a>
+                    </h2>
+                    <i class="icon-close">X</i>
+                </header>
+                <p class="summary single-line">
+                    当成龙开始代言农产品，粉丝觉得Jackie Chan跌了身份。陆奇入局了拼多多新成立的技术委员会，亦有人觉得陆奇“怎么一点都不挑呢”？这位AI奇才从雅虎、到微软、到百度、... </p>
+                <footer>
+                    <a class="author split" href="https://blog.csdn.net/dQCFKyQDXYm3F8rB0?utm_source=feed" target="_blank">
+                        <img src="https://profile.csdnimg.cn/6/9/F/1_dqcfkyqdxym3f8rb0" alt="dQCFKyQDXYm3F8rB0" title="dQCFKyQDXYm3F8rB0">
+                        AI科技大本营 </a>
+                    </a>
+                    <a class="category split" target="_blank" href="https://www.csdn.net/nav/ai">人工智能</a>
+                    <span class="time">3天前</span>
+                </footer>
+            </li>
+            <li>
+                <header>
+                    <h2>
+                        <a href="https://blog.csdn.net/CSDNedu/article/details/88533269" target="_blank">
+                            Java 跌落神坛！Python 正式登顶世界第一编程语言 </a>
+
+                    </h2>
+                    <i class="icon-close">X</i>
+                </header>
+                <p class="summary single-line">
+                </p>
+                <footer>
+                    <a class="author split" href="https://blog.csdn.net/CSDNedu?utm_source=feed" target="_blank">
+                        <img src="https://profile.csdnimg.cn/4/E/4/1_csdnedu" alt="CSDNedu" title="CSDNedu">
+                        CSDNedu </a>
+                    <span class="time">1天前</span>
+                </footer>
+            </li>
+            <li>
+                <header>
+                    <h2>
+                        <a href="https://blog.csdn.net/weixin_39780047/article/details/88569892" target="_blank">
+                            程序员和产品打架，被罚拉手一下午！ </a>
+
+                    </h2>
+                    <i class="icon-close">X</i>
+                </header>
+                <p class="summary single-line">
+                    是个程序员都知道，和产品经理撕x是最伤神的，所以产品经理在很多技术的眼里都等同于“事儿x”，毕竟现在别说懂技术的产品了，连懂技术边界的产品都打着灯笼找不着，能不撕吗？
+                    人人都是产品经理，把程序员脑子都闹崩了！
+
+                    但是撕归撕，如果领导处理不好这两者的关系，那要么产品遁地，要么技术跑路，团队就别干了，光顾着吵架出不来活。
+                    而最近某公司有个非常“皮”的领导，因为程序员和产品打架（俩男的），所以决定要么都...
+                </p>
+                <footer>
+                    <a class="author split" href="https://blog.csdn.net/weixin_39780047?utm_source=feed" target="_blank">
+                        <img src="https://profile.csdnimg.cn/4/E/4/1_csdnedu" alt="CSDNedu" title="CSDNedu">
+                        weixin_39780047 </a>
+                    </a>
+                    <a class="category split" target="_blank" href="https://www.csdn.net/nav/career">程序人生</a>
+                    <span class="time">1天前</span>
+                </footer>
+            </li>
+            <li>
+                <header>
+                    <h2>
+                        <a href="https://blog.csdn.net/csdnnews/article/details/88564393" target="_blank"
+                            data-track-click="{&quot;mod&quot;:&quot;popu_459&quot;,&quot;con&quot;:&quot;,https://blog.csdn.net/csdnnews/article/details/88564393,recommend,index_2&quot;}">
+                            陆奇技术入局拼多多，拼多多能否摆脱“五环外”？ </a>
+                    </h2>
+                    <i class="icon-close">X</i>
+                </header>
+                <p class="summary single-line">
+                    当成龙开始代言农产品，粉丝觉得Jackie Chan跌了身份。陆奇入局了拼多多新成立的技术委员会，亦有人觉得陆奇“怎么一点都不挑呢”？这位AI奇才从雅虎、到微软、到百度、... </p>
+                <footer>
+                    <a class="author split" href="https://blog.csdn.net/dQCFKyQDXYm3F8rB0?utm_source=feed" target="_blank">
+                        <img src="https://profile.csdnimg.cn/6/9/F/1_dqcfkyqdxym3f8rb0" alt="dQCFKyQDXYm3F8rB0" title="dQCFKyQDXYm3F8rB0">
+                        AI科技大本营 </a>
+                    </a>
+                    <a class="category split" target="_blank" href="https://www.csdn.net/nav/ai">人工智能</a>
+                    <span class="time">3天前</span>
+                </footer>
+            </li>
+            <li>
+                <header>
+                    <h2>
+                        <a href="https://blog.csdn.net/CSDNedu/article/details/88533269" target="_blank">
+                            Java 跌落神坛！Python 正式登顶世界第一编程语言 </a>
+
+                    </h2>
+                    <i class="icon-close">X</i>
+                </header>
+                <p class="summary single-line">
+                </p>
+                <footer>
+                    <a class="author split" href="https://blog.csdn.net/CSDNedu?utm_source=feed" target="_blank">
+                        <img src="https://profile.csdnimg.cn/4/E/4/1_csdnedu" alt="CSDNedu" title="CSDNedu">
+                        CSDNedu </a>
+                    <span class="time">1天前</span>
+                </footer>
+            </li>
+            <li>
+                <header>
+                    <h2>
+                        <a href="https://blog.csdn.net/weixin_39780047/article/details/88569892" target="_blank">
+                            程序员和产品打架，被罚拉手一下午！ </a>
+
+                    </h2>
+                    <i class="icon-close">X</i>
+                </header>
+                <p class="summary single-line">
+                    是个程序员都知道，和产品经理撕x是最伤神的，所以产品经理在很多技术的眼里都等同于“事儿x”，毕竟现在别说懂技术的产品了，连懂技术边界的产品都打着灯笼找不着，能不撕吗？
+                    人人都是产品经理，把程序员脑子都闹崩了！
+
+                    但是撕归撕，如果领导处理不好这两者的关系，那要么产品遁地，要么技术跑路，团队就别干了，光顾着吵架出不来活。
+                    而最近某公司有个非常“皮”的领导，因为程序员和产品打架（俩男的），所以决定要么都...
+                </p>
+                <footer>
+                    <a class="author split" href="https://blog.csdn.net/weixin_39780047?utm_source=feed" target="_blank">
+                        <img src="https://profile.csdnimg.cn/4/E/4/1_csdnedu" alt="CSDNedu" title="CSDNedu">
+                        weixin_39780047 </a>
+                    </a>
+                    <a class="category split" target="_blank" href="https://www.csdn.net/nav/career">程序人生</a>
+                    <span class="time">1天前</span>
+                </footer>
+            </li>
+            <li>
+                <header>
+                    <h2>
+                        <a href="https://blog.csdn.net/csdnnews/article/details/88564393" target="_blank"
+                            data-track-click="{&quot;mod&quot;:&quot;popu_459&quot;,&quot;con&quot;:&quot;,https://blog.csdn.net/csdnnews/article/details/88564393,recommend,index_2&quot;}">
+                            陆奇技术入局拼多多，拼多多能否摆脱“五环外”？ </a>
+                    </h2>
+                    <i class="icon-close">X</i>
+                </header>
+                <p class="summary single-line">
+                    当成龙开始代言农产品，粉丝觉得Jackie Chan跌了身份。陆奇入局了拼多多新成立的技术委员会，亦有人觉得陆奇“怎么一点都不挑呢”？这位AI奇才从雅虎、到微软、到百度、... </p>
+                <footer>
+                    <a class="author split" href="https://blog.csdn.net/dQCFKyQDXYm3F8rB0?utm_source=feed" target="_blank">
+                        <img src="https://profile.csdnimg.cn/6/9/F/1_dqcfkyqdxym3f8rb0" alt="dQCFKyQDXYm3F8rB0" title="dQCFKyQDXYm3F8rB0">
+                        AI科技大本营 </a>
+                    </a>
+                    <a class="category split" target="_blank" href="https://www.csdn.net/nav/ai">人工智能</a>
+                    <span class="time">3天前</span>
+                </footer>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
