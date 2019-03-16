@@ -1,0 +1,264 @@
+.reset-list,
+.list > ul,
+.list > ol,
+.list > ul > li,
+.list > ol > li,
+.tab > header > ul,
+.tab > .header > ul,
+.tab > header > ol,
+.tab > .header > ol,
+.tab > header > ul > li,
+.tab > .header > ul > li,
+.tab > header > ol > li,
+.tab > .header > ol > li,
+.tab > main > ul,
+.tab > .main > ul,
+.tab > main > ol,
+.tab > .main > ol,
+.tab > main > ul > li,
+.tab > .main > ul > li,
+.tab > main > ol > li,
+.tab > .main > ol > li,
+.carousel > ul,
+.carousel > ol,
+.carousel > ul > li,
+.carousel > ol > li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.list-inline-block > ul > li,
+.list-inline-block > ol > li {
+  display: inline-block;
+}
+.list-inline > ul > li,
+.list-inline > ol > li {
+  display: inline;
+}
+.tab > header > ul > li,
+.tab > .header > ul > li,
+.tab > header > ol > li,
+.tab > .header > ol > li {
+  display: inline-block;
+  background-color: #eee;
+}
+.tab > header > ul > li.active,
+.tab > .header > ul > li.active,
+.tab > header > ol > li.active,
+.tab > .header > ol > li.active {
+  background-color: #fff;
+}
+.tab > main > ul > li,
+.tab > .main > ul > li,
+.tab > main > ol > li,
+.tab > .main > ol > li {
+  display: none;
+}
+.tab > main > ul > li.active,
+.tab > .main > ul > li.active,
+.tab > main > ol > li.active,
+.tab > .main > ol > li.active {
+  display: block;
+}
+.layer-container {
+  position: relative;
+  overflow: hidden;
+}
+.layer {
+  position: absolute;
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel > ul:first-child {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.carousel > ul:first-child > li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.carousel > ul.indexes {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 8px;
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+}
+.carousel > ul.indexes > li {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.carousel > ul.indexes > li.active {
+  background: #007aff;
+}
+.carousel > .prev {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.carousel > .next {
+  position: absolute;
+  margin-right: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%);
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.grid {
+  box-sizing: border-box;
+}
+.grid * {
+  box-sizing: border-box;
+}
+.row {
+  box-sizing: border-box;
+  min-width: 96px;
+}
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.row > [class*='col-'] {
+  float: left;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 4px;
+}
+.row > [class*='col-'].col-right {
+  float: right;
+}
+.row > .col-1 {
+  width: calc(100% / 12 * 1);
+}
+.row > .col-2 {
+  width: calc(100% / 12 * 2);
+}
+.row > .col-3 {
+  width: calc(100% / 12 * 3);
+}
+.row > .col-4 {
+  width: calc(100% / 12 * 4);
+}
+.row > .col-5 {
+  width: calc(100% / 12 * 5);
+}
+.row > .col-6 {
+  width: calc(100% / 12 * 6);
+}
+.row > .col-7 {
+  width: calc(100% / 12 * 7);
+}
+.row > .col-8 {
+  width: calc(100% / 12 * 8);
+}
+.row > .col-9 {
+  width: calc(100% / 12 * 9);
+}
+.row > .col-10 {
+  width: calc(100% / 12 * 10);
+}
+.row > .col-11 {
+  width: calc(100% / 12 * 11);
+}
+.row > .col-12 {
+  width: calc(100% / 12 * 12);
+}
+.row > .col-offset-1 {
+  margin-left: calc(100% / 12 * 1);
+}
+.row > .col-offset-1.col-right {
+  margin-left: 0;
+  margin-right: calc(100% / 12 * 1);
+}
+.row > .col-offset-2 {
+  margin-left: calc(100% / 12 * 2);
+}
+.row > .col-offset-2.col-right {
+  margin-left: 0;
+  margin-right: calc(100% / 12 * 2);
+}
+.row > .col-offset-3 {
+  margin-left: calc(100% / 12 * 3);
+}
+.row > .col-offset-3.col-right {
+  margin-left: 0;
+  margin-right: calc(100% / 12 * 3);
+}
+.row > .col-offset-4 {
+  margin-left: calc(100% / 12 * 4);
+}
+.row > .col-offset-4.col-right {
+  margin-left: 0;
+  margin-right: calc(100% / 12 * 4);
+}
+.row > .col-offset-5 {
+  margin-left: calc(100% / 12 * 5);
+}
+.row > .col-offset-5.col-right {
+  margin-left: 0;
+  margin-right: calc(100% / 12 * 5);
+}
+.row > .col-offset-6 {
+  margin-left: calc(100% / 12 * 6);
+}
+.row > .col-offset-6.col-right {
+  margin-left: 0;
+  margin-right: calc(100% / 12 * 6);
+}
+.row > .col-offset-7 {
+  margin-left: calc(100% / 12 * 7);
+}
+.row > .col-offset-7.col-right {
+  margin-left: 0;
+  margin-right: calc(100% / 12 * 7);
+}
+.row > .col-offset-8 {
+  margin-left: calc(100% / 12 * 8);
+}
+.row > .col-offset-8.col-right {
+  margin-left: 0;
+  margin-right: calc(100% / 12 * 8);
+}
+.row > .col-offset-9 {
+  margin-left: calc(100% / 12 * 9);
+}
+.row > .col-offset-9.col-right {
+  margin-left: 0;
+  margin-right: calc(100% / 12 * 9);
+}
+.row > .col-offset-10 {
+  margin-left: calc(100% / 12 * 10);
+}
+.row > .col-offset-10.col-right {
+  margin-left: 0;
+  margin-right: calc(100% / 12 * 10);
+}
+.row > .col-offset-11 {
+  margin-left: calc(100% / 12 * 11);
+}
+.row > .col-offset-11.col-right {
+  margin-left: 0;
+  margin-right: calc(100% / 12 * 11);
+}
+.row > .col-offset-12 {
+  margin-left: calc(100% / 12 * 12);
+}
+.row > .col-offset-12.col-right {
+  margin-left: 0;
+  margin-right: calc(100% / 12 * 12);
+}
