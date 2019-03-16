@@ -9,5 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "obptcss": "^1.0.16"
+  }
 }
