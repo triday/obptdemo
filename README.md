@@ -1,6 +1,6 @@
 ## 此项目属于obptcss的展示项目
 
-[obptcss on GitHub](https://github.com/triday/obptcss/
+[obptcss on GitHub](https://github.com/triday/obptcss/)
 
 ### Grid(栅格)
 

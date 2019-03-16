@@ -1,0 +1,77 @@
+﻿.flow-vane ul {
+    font-size: 0;
+    display:inline-block;
+}
+
+.flow-vane li {
+    position: relative;
+    display: inline-block;
+    background-color: #000;
+    line-height: 3em;
+    height: 3em;
+    padding: 0 3em;
+    font-size: initial;
+    margin: 0 3px;
+    color: #fff;
+}
+
+    .flow-vane li > :only-child {
+        margin: 0;
+    }
+
+    .flow-vane li:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0;
+        top: 0;
+        border-style: solid;
+        border-color: currentColor;
+        border-top-color: transparent !important;
+        border-right-color: transparent !important;
+        border-bottom-color: transparent !important;
+        border-width: 1.5em 1.5em;
+    }
+
+    .flow-vane li:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 100%;
+        top: 0;
+        border-style: solid;
+        border-color: #000;
+        border-top-color: transparent !important;
+        border-right-color: transparent !important;
+        border-bottom-color: transparent !important;
+        border-width: 1.5em 1.5em;
+        z-index: 1;
+    }
+
+    .flow-vane li:first-child:before {
+        content: none;
+    }
+
+    .flow-vane li:last-child:after {
+        content: none;
+    }
+
+
+
+    .flow-vane li.flow-current {
+        background-color: #f00;
+    }
+
+        .flow-vane li.flow-current:after {
+            border-color: #f00;
+        }
+
+    .flow-vane li.flow-next {
+        background-color: #888;
+    }
+
+        .flow-vane li.flow-next:after {
+            border-color: #888;
+        }

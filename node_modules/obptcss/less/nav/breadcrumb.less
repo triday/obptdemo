@@ -1,0 +1,37 @@
+﻿/*面包屑导航*/
+.nav-breadcrumb ul,
+.nav-breadcrumb ol,
+.nav-breadcrumb li,
+.nav-breadcrumb > ul > li > a,
+.nav-breadcrumb > ol > li > a,
+.nav-breadcrumb > header:first-child, 
+.nav-breadcrumb > div:first-child,
+.nav-breadcrumb > h1:first-child, 
+.nav-breadcrumb > h2:first-child,
+.nav-breadcrumb > h3:first-child, 
+.nav-breadcrumb > h4:first-child,
+.nav-breadcrumb > h5:first-child, 
+.nav-breadcrumb > h6:first-child
+ {
+    display: inline-block;
+    margin:0;
+    padding:0;
+}
+
+    .nav-breadcrumb li:after {
+        content: '\\';
+        margin: 0 0 0 .2em;
+    }
+
+    .nav-breadcrumb li:last-child:after {
+        content: '';
+    }
+
+    .nav-breadcrumb li > a {
+        color: #00f;
+        display:inline-block;
+    }
+
+    .nav-breadcrumb li.active > a {
+        color: #000;
+    }

@@ -1,0 +1,32 @@
+﻿[class^="state-"] {
+    display: none;
+}
+
+
+.display-open {
+}
+.display-close {
+}
+
+        .display-open .display-state-text:before {
+            content: '折叠';
+        }
+
+        .display-close .display-state-text:before {
+            content: '展开';
+        }
+
+        .display-state-arrow {
+            transition: transform .1s ease-in 0s;
+            -webkit-transition: -webkit-transform .1s ease-in 0s;
+        }
+
+        .display-open .display-state-arrow {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+
+        .display-close .display-state-arrow {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }

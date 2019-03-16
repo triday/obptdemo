@@ -1,0 +1,164 @@
+﻿.popup {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*弹出窗体*/
+.dialog {
+    background-color: #fff;
+    border-radius: 5px;
+    min-width: 70%;
+    max-width: 90%;
+    max-height: 95%;
+    line-height:1.5em;
+    /*overflow:auto;*/
+}
+
+    .dialog > .header {
+        text-align: center;
+        line-height: 2.0em;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+
+    .dialog > .body {
+        text-align: center;
+        padding: 5%;
+    }
+
+    .dialog > .footer {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        line-height: 2.4em;
+        font-size: 1.5em;
+        position: relative;
+    }
+
+        .dialog > .footer > a {
+            display: block;
+            -ms-flex: 1;
+            -webkit-box-flex: 1;
+            flex: 1;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            position: relative;
+        }
+
+            .dialog > .footer > a:active {
+                background-color: #e4e1e1;
+            }
+
+        .dialog > .footer:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 1px;
+            right: 0;
+            bottom: 0;
+            border-top: 1px solid #d5d5d5;
+        }
+
+        .dialog > .footer > a:not(:last-child):after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 1px;
+            right: 0;
+            bottom: 0;
+            border-right: 1px solid #d5d5d5;
+        }
+
+        .dialog > .footer > .btn_gray {
+            color: #9e9e9e;
+        }
+
+        .dialog > .footer > .btn_green {
+            color: #5ee444;
+        }
+
+        .dialog > .footer > .btn_red {
+            color: #ff6a00;
+        }
+/*Toast效果*/
+.toast {
+    width: 7.6em;
+    min-height: 7.6em;
+    /*margin-top: -7.6em;*/
+    background: rgba(40, 40, 40, 0.75);
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    overflow:hidden;
+}
+
+    .toast > .icon {
+        margin: 0.375em 0 0;
+        font-size: 3.4em;
+        display: block;
+    }
+
+    .toast > .content {
+        margin: .5em 0 1em;
+    }
+/*Select*/
+.select {
+    width: 80%;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    list-style-type: none;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 5px;
+    max-height: 90%;
+    overflow: auto;
+}
+
+    .select > .item {
+        position:relative;
+    }
+
+        .select > .item:not(:last-child):after {
+            content:'';
+            position:absolute;
+            left: 0;
+            right: 0;
+            height: 1px;
+            bottom: 0;
+            border-bottom: 1px solid #d5d5d5;
+        }
+        .select > .item > a {
+            padding: .5em .8em;
+            display: block;
+            color: #000;
+            text-decoration: none;
+        }
+        .select > .item:hover {
+             background-color: #f2eded;
+        }
+           
+            .select > .item.active  {
+                background-color: #e4e1e1;
+            }
+
+            .select > .item > a > .icon, .select > .item > a > .fa {
+                margin-right: .8em;
+            }

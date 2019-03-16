@@ -1,0 +1,63 @@
+@import '../@vars.less';
+@import './list.less';
+@import './layer.less';
+
+
+.carousel {
+    .list();
+    .layer-container();
+
+    &>ul:first-child {
+        position: relative;
+        max-width: 100%;
+        height: 100%;
+        margin: 0 auto;
+
+        &>li {
+            .layer();
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &>ul.indexes {
+        .layer();
+        margin: 0 auto;
+        bottom: 8px;
+        width: 100%;
+        font-size: 0;
+        text-align: center;
+
+        &>li {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            background: @carousel_index_bkcolor;
+
+            &.active {
+                background: @carousel_index_active_bkcolor;
+            }
+        }
+    }
+
+    &>.prev {
+        .layer();
+        margin-left: 50%;
+        margin-top: 50%;
+        transform: translate(-50%, -50%);
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    &>.next {
+        .layer();
+        margin-right: 50%;
+        margin-top: 50%;
+        transform: translate(-50%, -50%);
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+}

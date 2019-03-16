@@ -1,0 +1,48 @@
+﻿.flow-list li {
+    position: relative;
+}
+
+    .flow-list li > * {
+        margin: 0;
+    }
+
+    .flow-list li:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: -.6em;
+        width: 0;
+        border-left: 1px solid #888;
+    }
+
+    .flow-list li:first-child:before {
+        top: 50%;
+    }
+
+    .flow-list li:last-child:before {
+        bottom: 50%;
+    }
+
+    .flow-list li:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: -.6em;
+        border: .3em solid currentColor;
+        border-radius: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .flow-list li.flow-next {
+        color: #000;
+    }
+
+    .flow-list li.flow-current {
+        color: #f00;
+    }
+
+    .flow-list li.flow-over {
+        color: #888;
+    }

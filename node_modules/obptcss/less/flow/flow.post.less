@@ -1,0 +1,80 @@
+﻿.flow-post > ol, .flow-post > ul {
+    text-align: center;
+}
+
+.flow-post li {
+    display: table-cell;
+    width: 1%;
+    position: relative;
+}
+
+
+
+    .flow-post li:before {
+        content: '';
+        position: absolute;
+        left: -50%;
+        right: 50%;
+        top: 50%;
+        height: 1px;
+        bottom: 50%;
+        transform: translate(0,-50%);
+        background-color: #000;
+        /*border: 1px solid #888;*/
+        z-index: -1;
+    }
+
+    .flow-post li:first-child:before {
+        content: none;
+    }
+
+    .flow-post li:after {
+        content: counter(flow);
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    .flow-post li .above, .flow-post li .under {
+        position: absolute;
+    }
+
+    .flow-post li .above {
+        left: 0;
+        right: 0;
+        bottom: 0.5em;
+    }
+
+    .flow-post li .under {
+        left: 0;
+        right: 0;
+        top: 0.5em;
+    }
+
+    .flow-post li.flow-over:before {
+        background-color: #000;
+    }
+
+    .flow-post li.flow-over:after {
+        background-color: #000;
+    }
+
+    .flow-post li.flow-current:before {
+        background-color: #000;
+    }
+
+    .flow-post li.flow-current:after {
+        background-color: #f00;
+    }
+
+    .flow-post li.flow-next:before {
+        background-color: #888;
+    }
+
+    .flow-post li.flow-next:after {
+        background-color: #888;
+    }

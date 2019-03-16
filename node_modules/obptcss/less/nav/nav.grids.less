@@ -1,0 +1,78 @@
+﻿.nav-grids > ul:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-grids > ul > li {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+    .nav-grids > ul > li:before {
+        content: '';
+        position: absolute;
+        box-sizing: border-box;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+        border: 1px solid #f00;
+        border-top-width: 0;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 0;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        pointer-events: none;
+    }
+
+.nav-grids-2 > ul > li {
+    width: 50%;
+}
+
+    .nav-grids-2 > ul > li:nth-child(2n):before {
+        border-right-width: 0;
+    }
+
+    .nav-grids-2 > ul > li:nth-child(-n+2):before {
+        border-top-width: 1px;
+    }
+
+
+.nav-grids-3 > ul > li {
+    width: 33.333333%;
+}
+
+    .nav-grids-3 > ul > li:nth-child(3n):before {
+        border-right-width: 0;
+    }
+
+    .nav-grids-3 > ul > li:nth-child(-n+3):before {
+        border-top-width: 1px;
+    }
+
+.nav-grids-4 > ul > li {
+    width: 25%;
+}
+
+    .nav-grids-4 > ul > li:nth-child(4n):before {
+        border-right-width: 0;
+    }
+
+    .nav-grids-4 > ul > li:nth-child(-n+4):before {
+        border-top-width: 1px;
+    }
+
+.nav-grids-5 > ul > li {
+    width: 20%;
+}
+
+    .nav-grids-5 > ul > li:nth-child(5n):before {
+        border-right-width: 0;
+    }
+     .nav-grids-5 > ul > li:nth-child(-n+5):before {
+        border-top-width: 1px;
+    }

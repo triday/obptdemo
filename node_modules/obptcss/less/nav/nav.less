@@ -1,0 +1,83 @@
+﻿.nav:after { /*清除浮动影响*/
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.nav ul, .nav ul > li, nav ul > li > a {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav ul {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav > ul > li {
+    width: 1%;
+    display: table-cell;
+    text-align: center;
+}
+
+    .nav > ul > li.active {
+        background-color: #eee;
+    }
+
+    .nav > ul > li:hover {
+        background-color: #ddd;
+    }
+
+    .nav > ul > li > a {
+        display: block;
+        white-space: nowrap;
+    }
+
+.nav.nav-auto-width > ul {
+    font-size: 0;
+    display: inline-block;
+}
+
+    .nav.nav-auto-width > ul > li {
+        display: inline-block;
+        width: auto;
+        font-size: 1rem;
+    }
+
+.nav.nav-vertical > ul {
+    display: block;
+}
+
+    .nav.nav-vertical > ul > li {
+        display: block;
+        width: 100%;
+    }
+/*以下是二级菜单*/
+.nav > ul > li {
+    position: relative;
+}
+
+    .nav > ul > li > .nav {
+        display: none;
+        position: absolute;
+        min-width: 100%;
+    }
+
+.nav.nav-vertical > ul > li > .nav {
+    left: 100%;
+    top: 0;
+    min-width: initial;
+}
+
+.nav > ul > li:hover > .nav {
+    display: block;
+}
+/*以下是三级菜单*/
