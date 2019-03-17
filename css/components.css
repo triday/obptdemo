@@ -15,10 +15,8 @@ li {
   margin: 0;
   list-style: none;
 }
-.list::after {
-  content: '';
-  display: table;
-  clear: both;
+.list {
+  box-sizing: border-box;
 }
 .list-inline-block > ul > li,
 .list-inline-block > ol > li {
@@ -61,13 +59,9 @@ li {
   position: absolute;
 }
 .carousel {
+  box-sizing: border-box;
   position: relative;
   overflow: hidden;
-}
-.carousel::after {
-  content: '';
-  display: table;
-  clear: both;
 }
 .carousel > ul:first-child {
   position: relative;
@@ -272,4 +266,102 @@ li {
 }
 .flow-right > * {
   float: right;
+}
+ul,
+ol {
+  counter-reset: list-item-seq;
+}
+ul > li,
+ol > li {
+  counter-increment: list-item-seq;
+}
+.seq::before {
+  content: counter(list-item-seq);
+}
+.seq-disc .seq::before {
+  content: counter(list-item-seq, disc);
+}
+.seq-circle .seq::before {
+  content: counter(list-item-seq, circle);
+}
+.seq-square .seq::before {
+  content: counter(list-item-seq, square);
+}
+.seq-decimal .seq::before {
+  content: counter(list-item-seq, decimal);
+}
+.seq-decimal-leading-zero .seq::before {
+  content: counter(list-item-seq, decimal-leading-zero);
+}
+.seq-lower-roman .seq::before {
+  content: counter(list-item-seq, lower-roman);
+}
+.seq-upper-roman .seq::before {
+  content: counter(list-item-seq, upper-roman);
+}
+.seq-lower-alpha .seq::before {
+  content: counter(list-item-seq, lower-alpha);
+}
+.seq-upper-alpha .seq::before {
+  content: counter(list-item-seq, upper-alpha);
+}
+.seq-lower-greek .seq::before {
+  content: counter(list-item-seq, lower-greek);
+}
+.seq-lower-latin .seq::before {
+  content: counter(list-item-seq, lower-latin);
+}
+.seq-upper-latin .seq::before {
+  content: counter(list-item-seq, upper-latin);
+}
+.seq-hebrew .seq::before {
+  content: counter(list-item-seq, hebrew);
+}
+.seq-armenian .seq::before {
+  content: counter(list-item-seq, armenian);
+}
+.seq-georgian .seq::before {
+  content: counter(list-item-seq, georgian);
+}
+.seq-cjk-ideographic .seq::before {
+  content: counter(list-item-seq, cjk-ideographic);
+}
+.seq-hiragana .seq::before {
+  content: counter(list-item-seq, hiragana);
+}
+.seq-katakana .seq::before {
+  content: counter(list-item-seq, katakana);
+}
+.seq-hiragana-iroha .seq::before {
+  content: counter(list-item-seq, hiragana-iroha);
+}
+.seq-katakana-iroha .seq::before {
+  content: counter(list-item-seq, katakana-iroha);
+}
+.seq-decimal-dot .seq::before {
+  content: counter(list-item-seq, decimal) '.';
+}
+.seq-decimal-half-bracket .seq::before {
+  content: counter(list-item-seq, decimal) ')';
+}
+.seq-decimal-square-bracket .seq::before {
+  content: '[' counter(list-item-seq, decimal) ']';
+}
+.seq-upper-alpha-dot .seq::before {
+  content: counter(list-item-seq, upper-alpha) '.';
+}
+.seq-lower-alpha-dot .seq::before {
+  content: counter(list-item-seq, lower-alpha) '.';
+}
+.seq-lower-alpha-half-bracket .seq::before {
+  content: counter(list-item-seq, lower-alpha) ')';
+}
+.seq-cjk-ideographic-square-bracket .seq::before {
+  content: '[' counter(list-item-seq, cjk-ideographic) ']';
+}
+.seq-cjk-ideographic-bracket .seq::before {
+  content: '(' counter(list-item-seq, cjk-ideographic) ')';
+}
+.seq-cjk-ideographic-dot .seq::before {
+  content: counter(list-item-seq, cjk-ideographic) '、';
 }
