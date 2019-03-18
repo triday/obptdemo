@@ -16,5 +16,8 @@
 -  [图文列表](https://triday.github.io/obptdemo/demos/list/news2.html){:target="_blank"}
 -  [博客列表](https://triday.github.io/obptdemo/demos/list/blogs.html){:target="_blank"}
 
-### Sequence列表序列)
+### Sequence(列表序列)
 -  [基本](https://triday.github.io/obptdemo/demos/sequence/seqnews.html){:target="_blank"}
+-  [自定义](https://triday.github.io/obptdemo/demos/sequence/custom.html){:target="_blank"}
+-  [图片](https://triday.github.io/obptdemo/demos/sequence/imgseq.html){:target="_blank"}
+-  [搜狐热点](https://triday.github.io/obptdemo/demos/sequence/sohunews.html){:target="_blank"}
