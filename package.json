@@ -13,6 +13,6 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "obptcss": "^1.0.25"
+    "obptcss": "^1.0.27"
   }
 }

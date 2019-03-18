@@ -267,6 +267,30 @@ li {
 .flow-right > * {
   float: right;
 }
+.flow-vertical {
+  writing-mode: vertical-lr;
+}
+.flow-vertical::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.flow-vertical > * {
+  writing-mode: initial;
+  float: left;
+}
+.flow-vertical-right {
+  writing-mode: vertical-rl;
+}
+.flow-vertical-right::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.flow-vertical-right > * {
+  writing-mode: initial;
+  float: left;
+}
 ul,
 ol {
   counter-reset: list-item-seq;
@@ -341,7 +365,7 @@ ol > li {
 .seq-decimal-dot .seq::before {
   content: counter(list-item-seq, decimal) '.';
 }
-.seq-decimal-half-bracket .seq::before {
+.seq-decimal-right-bracket .seq::before {
   content: counter(list-item-seq, decimal) ')';
 }
 .seq-decimal-square-bracket .seq::before {
@@ -353,7 +377,7 @@ ol > li {
 .seq-lower-alpha-dot .seq::before {
   content: counter(list-item-seq, lower-alpha) '.';
 }
-.seq-lower-alpha-half-bracket .seq::before {
+.seq-lower-alpha-right-bracket .seq::before {
   content: counter(list-item-seq, lower-alpha) ')';
 }
 .seq-cjk-ideographic-square-bracket .seq::before {

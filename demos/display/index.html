@@ -6,32 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid red;
+            width: 300px;
+        }
+
+
+
+        .target {
+            display: none;
+            background-color: antiquewhite;
+        }
+
+        /* .target {
+            transition: height 250ms;
+            overflow: hidden;
+        } */
+    </style>
+    <script src="https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+    <script>
+        var funTransitionHeight = function (element) { // time, 数值，可缺省
+            if (typeof window.getComputedStyle == "undefined") return;
+
+            var height = window.getComputedStyle(element).height;
+
+            element.style.transition = "none"; // 本行2015-05-20新增，mac Safari下，貌似auto也会触发transition, 故要none下~
+
+            element.style.height = "auto";
+            var targetHeight = window.getComputedStyle(element).height;
+            element.style.height = height;
+            element.offsetWidth = element.offsetWidth;
+            element.offsetWidth;
+
+            element.style.height = targetHeight;
+        };
+
+        function show(element) {
+            $(element).show();
+            var comStyle2 = window.getComputedStyle(element);
+            var height2 = comStyle2.height;
+            element.style.height = '0';
+            element.style.overflow = 'hidden';
+            element.style.transition = 'height 500ms';
+            setTimeout(() => {
+                element.style.height = height2;
+            }, 0);
+        }
+        $(function () {
+            $('.displaybtn').on('click', function () {
+                show(document.querySelector('.target'));
+            });
+
+        })
+    </script>
+
 </head>
 
 <body>
-    <div class="display-close">
+    <div class="container">
 
-        <span class="displaybtn"></span>
-        <p class="display-target">
-
-        </p>
+        <button class="displaybtn">显示/隐藏</button>
+        <div class="target" style="display:none">
+            <p>Hello,World</p>
+            <p>Hello,World</p>
+            <p>Hello,World</p>
+            <p>Hello,World</p>
+            <p>Hello,World</p>
+            <p>Hello,World</p>
+            <p>Hello,World</p>
+            <p>Hello,World</p>
+            <p>Hello,World</p>
+        </div>
     </div>
 
-    <div>
-        <header>
-            <ul>
-                <li data-target="../../+main>ul>li[0]"></li>
-                <li></li>
-            </ul>
-        </header>
-        <main>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-            
-        </main>
-    </div>
 </body>
 
 </html>

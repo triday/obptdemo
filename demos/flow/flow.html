@@ -5,24 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>流式布局</title>
     <link rel="stylesheet" href="../../css/components.css">
     <style>
         .list {
             border: 1px solid green;
             margin: 10px;
-
+            width: 400px;
         }
-
+        
         .list ul {
             background-color: antiquewhite;
+            width: 100%;
+            height: 200px;
         }
 
         .box {
-            width: 200px;
-            height: 100px;
+            width: 80px;
+            height:50px;
             border: 1px dashed #f00;
             margin: 5px;
+            font-size: 200%;
+            line-height: 50px;
+            text-align: center;
         }
     </style>
 </head>
@@ -32,19 +37,19 @@
         <h2>流式布局（左）</h2>
         <ul class="flow">
             <li>
-                <div class="box"></div>
+                <div class="box">1</div>
             </li>
             <li>
-                <div class="box"></div>
+                <div class="box">2</div>
             </li>
             <li>
-                <div class="box"></div>
+                <div class="box">3</div>
             </li>
             <li>
-                <div class="box"></div>
+                <div class="box">4</div>
             </li>
             <li>
-                <div class="box"></div>
+                <div class="box">5</div>
             </li>
         </ul>
     </section>
@@ -52,19 +57,59 @@
         <h2>流式布局（右）</h2>
         <ul class="flow-right">
             <li>
-                <div class="box"></div>
+                <div class="box">1</div>
             </li>
             <li>
-                <div class="box"></div>
+                <div class="box">2</div>
             </li>
             <li>
-                <div class="box"></div>
+                <div class="box">3</div>
             </li>
             <li>
-                <div class="box"></div>
+                <div class="box">4</div>
             </li>
             <li>
-                <div class="box"></div>
+                <div class="box">5</div>
+            </li>
+        </ul>
+    </section>
+    <section class="list">
+        <h2>流式布局（竖向）</h2>
+        <ul class="flow-vertical">
+            <li>
+                <div class="box">1</div>
+            </li>
+            <li>
+                <div class="box">2</div>
+            </li>
+            <li>
+                <div class="box">3</div>
+            </li>
+            <li>
+                <div class="box">4</div>
+            </li>
+            <li>
+                <div class="box">5</div>
+            </li>
+        </ul>
+    </section>
+    <section class="list">
+        <h2>流式布局（竖向靠右）</h2>
+        <ul class="flow-vertical-right">
+            <li>
+                <div class="box">1</div>
+            </li>
+            <li>
+                <div class="box">2</div>
+            </li>
+            <li>
+                <div class="box">3</div>
+            </li>
+            <li>
+                <div class="box">4</div>
+            </li>
+            <li>
+                <div class="box">5</div>
             </li>
         </ul>
     </section>
