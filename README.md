@@ -15,4 +15,6 @@
 -  [新闻列表](https://triday.github.io/obptdemo/demos/list/news.html){:target="_blank"}
 -  [图文列表](https://triday.github.io/obptdemo/demos/list/news2.html){:target="_blank"}
 -  [博客列表](https://triday.github.io/obptdemo/demos/list/blogs.html){:target="_blank"}
--  [带序列的列表](https://triday.github.io/obptdemo/demos/list/seqnews.html){:target="_blank"}
+
+### Sequence列表序列)
+-  [基本](https://triday.github.io/obptdemo/demos/sequence/seqnews.html){:target="_blank"}
